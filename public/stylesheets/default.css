@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 :root {
-  --black-primary: rgb(0, 0, 0);
-  --black-secondary: rgb(26, 26, 26);
-  --black-tertiary: rgb(51, 51 51);
+  --black-primary: rgb(39, 39, 39);
+  --black-secondary: rgb(53, 53, 53);
+  --black-tertiary: rgb(70, 70, 70);
 
   --pink-primary: rgb(255, 20, 145);
   --pink-secondary: rgb(255, 105, 180);
