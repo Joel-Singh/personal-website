@@ -2,18 +2,22 @@
 
 :root {
   /* Blacks */
-  --black-primary: #000000;
-  --black-secondary: #1a1a1a; /* Slightly lighter black for backgrounds or accents */
-  --black-tertiary: #333333; /* Even lighter, almost a very dark gray */
+  --black-primary: rgb(0, 0, 0);
+  --black-secondary: rgb(
+    26,
+    26,
+    26
+  ); /* Slightly lighter black for backgrounds or accents */
+  --black-tertiary: rgb(51, 51 51); /* Even lighter, almost a very dark gray */
 
   /* Pinks */
-  --pink-primary: #ff1493; /* DeepPink */
-  --pink-secondary: #ff69b4; /* HotPink */
-  --pink-tertiary: #ffb6c1; /* LightPink */
+  --pink-primary: rgb(255, 20, 145); /* DeepPink */
+  --pink-secondary: rgb(255, 105, 180); /* HotPink */
+  --pink-tertiary: rgb(255, 182, 193); /* LightPink */
 
   /* Neutrals for balance */
-  --neutral-light: #f1f1f1; /* Light gray */
-  --neutral-dark: #666666; /* Dark gray */
+  --neutral-light: rgb(241, 241, 241); /* Light gray */
+  --neutral-dark: rgb(102, 102, 102); /* Dark gray */
 }
 
 header {
