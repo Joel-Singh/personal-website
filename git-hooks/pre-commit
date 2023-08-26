@@ -1,0 +1,35 @@
+#!/usr/bin/env sh
+stash_count_before=$(git stash list | wc -l)
+git stash -q --keep-index --include-untracked
+stash_count_after=$(git stash list | wc -l)
+
+if [ $? -ne 0 ]; then
+    echo "Stashing unstaged changes failed!"
+    exit 1
+fi
+
+npm run formatAll
+git add .
+
+npm test -- --onlyChanged --forceExit
+if [ $? -ne 0 ]; then
+    echo "Tests failed!"
+    exit 1
+fi
+
+if (( stash_count_after > stash_count_before )); then
+    git stash apply -q
+    if [ $? -ne 0 ]; then
+        echo "conflict applying stash, favoring formatted changes"
+        # There's a conflict. Favor the current branch changes (after formatting).
+        git checkout --ours -- .
+        git add .
+
+        # Continue with the stash application to finalize it
+        git stash drop -q
+    else
+        git stash drop -q
+    fi
+fi
+
+exit 0
