@@ -3,7 +3,8 @@ html
   head
     title Joel Singh
     meta(charset="utf-8")
-    link(rel="stylesheet", href="/stylesheets/default.css")
-    link(rel="stylesheet", href="/stylesheets/reset.css")
+    block stylesheets
+      link(rel="stylesheet", href="/stylesheets/default.css")
+      link(rel="stylesheet", href="/stylesheets/reset.css")
   body
     block body
