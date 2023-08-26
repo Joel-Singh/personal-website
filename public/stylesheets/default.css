@@ -1,12 +1,75 @@
+:root {
+  /* Blacks */
+  --black-primary: #000000;
+  --black-secondary: #1a1a1a; /* Slightly lighter black for backgrounds or accents */
+  --black-tertiary: #333333; /* Even lighter, almost a very dark gray */
+
+  /* Pinks */
+  --pink-primary: #ff1493; /* DeepPink */
+  --pink-secondary: #ff69b4; /* HotPink */
+  --pink-tertiary: #ffb6c1; /* LightPink */
+
+  /* Neutrals for balance */
+  --neutral-light: #f1f1f1; /* Light gray */
+  --neutral-dark: #666666; /* Dark gray */
+}
+
 body {
-  padding: 50px;
-  font:
-    14px "Lucida Grande",
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: var(--black-primary);
+  color: var(--neutral-light);
+  padding: 20px;
+}
+
+h1 {
+  color: var(--pink-primary);
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: var(--pink-secondary);
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: var(--pink-tertiary);
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 a {
-  color: #00b7ff;
+  color: var(--pink-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--pink-secondary);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: var(--pink-primary);
+  color: var(--neutral-light);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--pink-secondary);
 }
