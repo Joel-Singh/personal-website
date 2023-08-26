@@ -1,23 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 :root {
-  /* Blacks */
   --black-primary: rgb(0, 0, 0);
-  --black-secondary: rgb(
-    26,
-    26,
-    26
-  ); /* Slightly lighter black for backgrounds or accents */
-  --black-tertiary: rgb(51, 51 51); /* Even lighter, almost a very dark gray */
+  --black-secondary: rgb(26, 26, 26);
+  --black-tertiary: rgb(51, 51 51);
 
-  /* Pinks */
-  --pink-primary: rgb(255, 20, 145); /* DeepPink */
-  --pink-secondary: rgb(255, 105, 180); /* HotPink */
-  --pink-tertiary: rgb(255, 182, 193); /* LightPink */
+  --pink-primary: rgb(255, 20, 145);
+  --pink-secondary: rgb(255, 105, 180);
+  --pink-tertiary: rgb(255, 182, 193);
 
-  /* Neutrals for balance */
-  --neutral-light: rgb(241, 241, 241); /* Light gray */
-  --neutral-dark: rgb(102, 102, 102); /* Dark gray */
+  --neutral-light: rgb(241, 241, 241);
+  --neutral-dark: rgb(102, 102, 102);
 }
 
 header {
