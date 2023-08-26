@@ -16,7 +16,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: var(--black-primary);
+  background-color: var(--black-secondary);
   color: var(--neutral-light);
   padding: 20px;
 }
