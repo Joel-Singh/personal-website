@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "npm run build && node ./dist/bin/www.js",
-    "devstart": "nodemon --ext ts,pug",
+    "devstart": "nodemon --ext ts,pug,css",
     "build": "rm -rf ./dist && mkdir dist/ && npm run build:typescript && npm run build:pug && npm run build:public",
     "build:typescript": "tsc --outDir dist/",
     "build:pug": "cp -r ./views ./dist/",
