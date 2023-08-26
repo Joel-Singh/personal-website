@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm run build && node ./build/bin/www.js",
-    "build": "tsc --outDir build/",
+    "start": "npm run build && node ./dist/bin/www.js",
+    "build": "tsc --outDir dist/",
     "test": "jest --passWithNoTests",
     "formatAll": "prettier --write ."
   },
