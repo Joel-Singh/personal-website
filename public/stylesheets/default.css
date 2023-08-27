@@ -1,15 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 :root {
-  --black-dark: #161c21;
-  --black: #171f28;
-  --black-light: #28282e;
-  --black-lighter: #272a32;
-  --grey: #757877;
-
-  --pink-primary: rgb(255, 20, 145);
-  --pink-secondary: rgb(255, 105, 180);
-  --pink-tertiary: rgb(255, 182, 193);
 }
 
 header {
@@ -17,23 +8,19 @@ header {
   text-align: center;
   padding: 20px 0;
   font-size: 1.5rem;
-  background-color: var(--black-dark);
 }
 
 body {
   font-family: "Times New Roman", Times, serif;
-  background-color: var(--black);
   padding: 20px;
 }
 
 h1 {
-  color: var(--pink-primary);
   font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
 h2 {
-  color: var(--pink-secondary);
   font-size: 2rem;
   margin-bottom: 10px;
 }
