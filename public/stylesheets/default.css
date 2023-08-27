@@ -16,6 +16,11 @@ header {
   background-color: var(--purple);
 }
 
+header > img {
+  height: 80vh;
+  aspect-ratio: auto;
+}
+
 body {
   font-family: "Times New Roman", Times, serif;
   padding: 20px;
