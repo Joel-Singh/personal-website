@@ -3,8 +3,10 @@
 :root {
   --dark-purple: #3d2a35;
   --purple: #734967;
+  --very-light-pink: #ffb7cb;
 
   background-color: var(--dark-purple);
+  color: var(--very-light-pink);
 }
 
 header {
