@@ -17,21 +17,7 @@ header {
   z-index: -1;
 
   background-color: var(--purple);
-}
-
-header::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 75%;
-  height: 50%;
-  border-radius: 100%;
-  opacity: 0.5;
-
-  background-color: var(--light-purple);
-  transform: translate(-50%, -50%);
+  background-color: var(--dark-purple);
 }
 
 header > img {
