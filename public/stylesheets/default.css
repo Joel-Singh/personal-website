@@ -18,6 +18,8 @@ body {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: auto auto auto;
+  align-items: center;
+  justify-items: center;
 }
 
 body > img {
