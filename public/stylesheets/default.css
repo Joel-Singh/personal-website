@@ -6,8 +6,10 @@
   --light-purple: #c0a4b4;
   --very-light-pink: #ffb7cb;
 
-  background-color: var(--dark-purple);
-  color: var(--very-light-pink);
+  --pure-white: rgb(255, 255, 255);
+  --pure-black: rgb(0, 0, 0);
+  background-color: var(--pure-black);
+  color: var(--pure-white);
 }
 
 body {
@@ -15,8 +17,6 @@ body {
   text-align: center;
   position: relative;
 
-  background-color: var(--purple);
-  background-color: var(--dark-purple);
   font-size: 3rem;
 
   display: flex;
