@@ -5,10 +5,11 @@
   --pure-black: rgb(0, 0, 0);
   background-color: var(--pure-black);
   color: var(--pure-white);
+
+  font-family: "Chivo Mono", monospace;
 }
 
 body {
-  font-family: "Chivo Mono", monospace;
   text-align: center;
   position: relative;
 
