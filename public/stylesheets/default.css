@@ -22,8 +22,6 @@ body {
 }
 
 img {
-  position: relative;
-  z-index: 1;
   height: 80vh;
   aspect-ratio: auto;
 }
