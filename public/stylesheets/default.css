@@ -3,6 +3,7 @@
 :root {
   --dark-purple: #3d2a35;
   --purple: #734967;
+  --light-purple: #c0a4b4;
   --very-light-pink: #ffb7cb;
 
   background-color: var(--dark-purple);
@@ -24,11 +25,12 @@ header::after {
   top: 50%;
   left: 50%;
 
-  width: 50%;
+  width: 75%;
   height: 50%;
+  border-radius: 100%;
+  opacity: 0.5;
 
-  background-color: #3498db;
-  border-radius: 50%;
+  background-color: var(--light-purple);
   transform: translate(-50%, -50%);
 }
 
