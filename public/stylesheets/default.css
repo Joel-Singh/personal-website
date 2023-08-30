@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@600&display=swap");
 
 :root {
-  --dark-purple: #3d2a35;
-  --purple: #734967;
-  --light-purple: #c0a4b4;
-  --very-light-pink: #ffb7cb;
-
   --pure-white: rgb(255, 255, 255);
   --pure-black: rgb(0, 0, 0);
   background-color: var(--pure-black);
