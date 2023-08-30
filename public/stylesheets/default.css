@@ -19,6 +19,9 @@ body {
   background-color: var(--purple);
   background-color: var(--dark-purple);
   font-size: 3rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
 img {
