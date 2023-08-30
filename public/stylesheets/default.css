@@ -24,9 +24,10 @@ body {
   flex-direction: column;
 }
 
-img {
+body > img {
   height: 80vh;
-  aspect-ratio: auto;
+  margin: auto;
+  flex: 0;
 }
 
 h1 {
