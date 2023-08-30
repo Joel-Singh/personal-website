@@ -26,7 +26,7 @@ body {
 
 body > img {
   height: 80vh;
-  margin: auto;
+  margin-top: auto;
   flex: 0;
 
   grid-row: 2 / 4;
