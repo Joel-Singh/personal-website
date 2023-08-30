@@ -32,3 +32,8 @@ h1 {
   margin: 0;
   grid-column: 1 / -1;
 }
+
+a {
+  height: min-content;
+  width: min-content;
+}
