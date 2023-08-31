@@ -44,6 +44,27 @@ a {
   --opposite-top-translate: calc(var(--top-translate) * -1);
   --bottom-translate: 30%;
   --opposite-bottom-translate: calc(var(--bottom-translate) * -1);
+
+  position: relative;
+  text-decoration: none;
+  padding: 2px 0;
+  overflow: hidden;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  height: 2px;
+  background-color: blue;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::before {
+  left: 0;
+  right: 0;
 }
 
 .a--about-me {
