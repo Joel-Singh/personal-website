@@ -47,9 +47,11 @@ a {
   --bottom-translate: 30%;
   --opposite-bottom-translate: calc(var(--bottom-translate) * -1);
 
+  --underline-size: 2px;
+
   position: relative;
   text-decoration: none;
-  padding: 2px 0;
+  padding: var(--underline-size) 0;
   overflow: hidden;
 }
 
@@ -59,7 +61,7 @@ a::before {
   bottom: 0;
   left: 50%;
   right: 50%;
-  height: 2px;
+  height: var(--underline-size);
   background-color: blue;
   transition: all 0.3s ease-in-out;
 }
