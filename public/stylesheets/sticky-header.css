@@ -1,0 +1,18 @@
+.sticky-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--white);
+}
+
+.sticky-header nav a {
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.sticky-header nav a:hover {
+  font-weight: bold;
+}

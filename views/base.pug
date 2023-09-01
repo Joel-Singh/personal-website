@@ -7,5 +7,10 @@ html
     block stylesheets
       link(rel="stylesheet", href="./stylesheets/reset.css")
       link(rel="stylesheet", href="./stylesheets/default.css")
+      link(rel="stylesheet", href="./stylesheets/sticky-header.css")
   body
+    block stickyHeader
+      header.sticky-header
+        nav
+          a(href="./") Joel Singh
     block body
