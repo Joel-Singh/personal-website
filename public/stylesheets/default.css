@@ -3,8 +3,14 @@
 :root {
   --white: #fdfcfe;
   --black: #1f1f24;
+  --blue: #4d7e9f;
+
   background-color: var(--black);
   color: var(--white);
 
   font-family: "Chivo Mono", monospace;
+}
+
+a {
+  color: var(--blue);
 }

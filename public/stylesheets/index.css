@@ -51,7 +51,7 @@ a::before {
   left: 50%;
   right: 50%;
   height: var(--underline-size);
-  background-color: blue;
+  background-color: var(--blue);
   transition: all 0.3s ease-in-out;
 }
 
