@@ -11,6 +11,11 @@
   font-family: "Noto sans", sans-serif;
 }
 
+body {
+  line-height: 1.6;
+  padding: 1em;
+}
+
 a {
   color: var(--blue);
 }
