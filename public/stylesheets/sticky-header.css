@@ -10,7 +10,7 @@
   padding: 10px 15px;
   display: block;
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 .sticky-header nav a:hover {
