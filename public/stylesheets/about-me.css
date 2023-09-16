@@ -6,20 +6,15 @@ section {
   margin: 20px 0;
 }
 
-.about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+body {
   padding: 50px;
 }
 
-.about-me h1 {
+h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
 }
 
-.about-me p {
+p {
   font-size: 1.2em;
 }
