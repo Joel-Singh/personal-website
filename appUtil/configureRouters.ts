@@ -14,7 +14,7 @@ export default function configureRouters(app: Express) {
   app.use("/contact", notDonePage);
   app.use("/resume", notDonePage);
 
-  const notFoundPage: RequestHandler = function (req, res, next) {
+  const notFoundPage: RequestHandler = (req, res, next) => {
     res.status(404).render("404");
   };
   app.use(notFoundPage);
