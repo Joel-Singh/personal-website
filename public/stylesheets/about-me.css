@@ -1,3 +1,19 @@
 h1:first-of-type {
   margin-top: 0;
 }
+
+img {
+  height: 500px;
+}
+
+img:nth-child(odd) {
+  float: right;
+  margin-left: 15px;
+  clear: both;
+}
+
+img:nth-child(even) {
+  float: left;
+  margin-right: 15px;
+  clear: both;
+}
