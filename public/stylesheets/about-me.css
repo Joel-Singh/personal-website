@@ -6,13 +6,13 @@ img {
   height: 500px;
 }
 
-img:nth-child(odd) {
+img.right {
   float: right;
   margin-left: 15px;
   clear: both;
 }
 
-img:nth-child(even) {
+img.left {
   float: left;
   margin-right: 15px;
   clear: both;
