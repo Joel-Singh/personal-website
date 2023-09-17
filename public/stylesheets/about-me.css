@@ -4,6 +4,7 @@ h1:first-of-type {
 
 img {
   height: 500px;
+  margin-top: 20px;
 }
 
 img.right {
