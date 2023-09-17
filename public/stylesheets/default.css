@@ -11,13 +11,13 @@
   font-family: "Noto sans", sans-serif;
 }
 
-section {
-  margin: 20px 0;
-}
-
 body {
   line-height: 1.6;
   padding: 50px;
+}
+
+section {
+  margin: 20px 0;
 }
 
 p {
