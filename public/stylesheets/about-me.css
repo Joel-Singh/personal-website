@@ -5,15 +5,3 @@ h1:first-of-type {
 img {
   margin-top: 20px;
 }
-
-img.right {
-  float: right;
-  margin-left: 15px;
-  clear: both;
-}
-
-img.left {
-  float: left;
-  margin-right: 15px;
-  clear: both;
-}
