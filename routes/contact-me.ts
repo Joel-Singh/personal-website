@@ -1,8 +1,8 @@
 import express from "express";
-const router = express.Router();
+const contactMeRouter = express.Router();
 
-router.get("/", function (req, res, next) {
+contactMeRouter.get("/", function (req, res, next) {
   res.render("main-pages/contact-me");
 });
 
-export default router;
+export default contactMeRouter;
