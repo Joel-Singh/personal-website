@@ -10,8 +10,9 @@ mixin project( projectInformation, imgInformation, demoHref, githubHref)
   h2= projectInformation.title
   img.right(alt=imgInformation.alt src=imgInformation.src width=imgInformation.width)
   p #{projectInformation.description}
-  a(href=demoHref) Live demo
-  a(href=githubHref) Source Code
+  - const linkStyling = "display: block;"
+  a(href=demoHref style=linkStyling) Live demo
+  a(href=githubHref style=linkStyling) Source Code
 
 block body
   h1 Portfolio
