@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "test": "jest --passWithNoTests",
-    "build": "pug ./views -o ./dist && cp -R ./public/* ./dist/",
+    "build:compilePugTemplates": "pug ./views -o ./dist",
+    "build:copyPublicFilesToDist": "cp -R ./public/* ./dist/",
+    "build": "npm run build:compilePugTemplates && npm run build:copyPublicFilesToDist",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d ./dist",
     "formatAll": "prettier --write ."
