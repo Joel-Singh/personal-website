@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "test": "jest --passWithNoTests",
+    "runLocally": "npm run build && http-server ./dist",
+    "runLocally:dev": "nodemon --ext ts,pug  --exec 'npm run runLocally'",
     "build:compilePugTemplates": "pug ./views -o ./dist",
     "build:copyPublicFilesToDist": "cp -R ./public/* ./dist/",
     "build": "npm run build:compilePugTemplates && npm run build:copyPublicFilesToDist",
@@ -21,6 +23,7 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "http-server": "^14.1.1",
     "morgan": "~1.9.1",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
