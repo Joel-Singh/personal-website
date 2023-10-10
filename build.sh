@@ -11,6 +11,12 @@ copyPublicToDist() {
   cp -R ./public/* ./dist/
 }
 
+routeNotDonePages() {
+  mkdir ./dist/resume
+  cp ./dist/not-done.html ./dist/resume/index.html
+}
+
 cleanDistDir
 compilePugTemplates
 copyPublicToDist
+routeNotDonePages
