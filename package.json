@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "test": "jest --passWithNoTests",
-    "runLocally": "npm run build && http-server ./dist",
+    "runLocally": "npm run build && http-server ./dist -c-1",
     "runLocally:dev": "nodemon --ext ts,pug,sh  --exec 'npm run runLocally'",
     "build": "./build.sh",
     "predeploy": "npm run build",
