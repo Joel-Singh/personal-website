@@ -6,9 +6,10 @@
     "test": "jest --passWithNoTests",
     "runLocally": "npm run build && http-server ./dist",
     "runLocally:dev": "nodemon --ext ts,pug  --exec 'npm run runLocally'",
+    "build:cleanDistDir": "rm -rf ./dist/*",
     "build:compilePugTemplates": "pug ./views -o ./dist",
     "build:copyPublicFilesToDist": "cp -R ./public/* ./dist/",
-    "build": "npm run build:compilePugTemplates && npm run build:copyPublicFilesToDist",
+    "build": "npm run build:cleanDistDir && npm run build:compilePugTemplates && npm run build:copyPublicFilesToDist",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d ./dist",
     "formatAll": "prettier --write ."
