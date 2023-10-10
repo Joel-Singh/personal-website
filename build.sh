@@ -1,4 +1,16 @@
 #!/usr/bin/env bash
-rm -rf ./dist/*
-pug ./views -o ./dist
-cp -R ./public/* ./dist/
+cleanDistDir() {
+  rm -rf ./dist/*
+}
+
+compilePugTemplates() {
+  pug ./views -o ./dist
+}
+
+copyPublicToDist() {
+  cp -R ./public/* ./dist/
+}
+
+cleanDistDir
+compilePugTemplates
+copyPublicToDist
