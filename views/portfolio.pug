@@ -7,12 +7,14 @@ block title
   title Portfolio
 
 mixin project( projectInformation, imgInformation, demoHref, githubHref)
-  h2= projectInformation.title
-  img.right(alt=imgInformation.alt src=imgInformation.src width=imgInformation.width)
-  p #{projectInformation.description}
-  - const linkStyling = "display: block;"
-  a(href=demoHref style=linkStyling) Live demo
-  a(href=githubHref style=linkStyling) Source Code
+  div.portfolio__project
+    div.portfolio__project__text
+      h2= projectInformation.title
+      p #{projectInformation.description}
+      - const linkStyling = "display: block;"
+      a(href=demoHref style=linkStyling) Live demo
+      a(href=githubHref style=linkStyling) Source Code
+    img(alt=imgInformation.alt src=imgInformation.src width=imgInformation.width)
 
 block body
   h1 Portfolio
