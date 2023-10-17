@@ -6,7 +6,7 @@
     "test": "jest --passWithNoTests",
     "clean": "rm -rf ./dist/*",
     "start": "npm run build && http-server ./dist -c-1",
-    "start:dev": "nodemon --ext ts,pug,sh,css --ignore './dist/*'  --exec 'npm run runLocally'",
+    "start:dev": "npx parcel serve ./views/*",
     "prebuild": "npm run clean",
     "build": "npx parcel build ./views/*",
     "predeploy": "npm run build",
