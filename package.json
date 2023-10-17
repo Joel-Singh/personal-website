@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "test": "jest --passWithNoTests",
-    "runLocally": "npm run build && http-server ./dist -c-1",
-    "runLocally:dev": "nodemon --ext ts,pug,sh,css --ignore './dist/*'  --exec 'npm run runLocally'",
+    "start": "npm run build && http-server ./dist -c-1",
+    "start:dev": "nodemon --ext ts,pug,sh,css --ignore './dist/*'  --exec 'npm run runLocally'",
     "build": "./build.sh",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d ./dist",
