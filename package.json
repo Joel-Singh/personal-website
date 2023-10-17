@@ -6,9 +6,9 @@
     "test": "jest --passWithNoTests",
     "clean": "rm -rf ./dist/*",
     "start": "npm run build && http-server ./dist -c-1",
-    "start:dev": "npx parcel serve ./views/*",
+    "start:dev": "npx parcel serve ./src/views/*",
     "prebuild": "npm run clean",
-    "build": "npx parcel build ./views/*",
+    "build": "npx parcel build ./src/views/*",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d ./dist",
     "formatAll": "prettier --write ."
