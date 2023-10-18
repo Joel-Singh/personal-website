@@ -8,8 +8,8 @@
     "start": "npm run build && http-server ./dist -c-1",
     "start:dev": "npx parcel serve ./src/views/*",
     "copyCNAME": "cp ./src/CNAME ./dist/",
-    "prebuild": "npm run clean && npm run copyCNAME",
-    "build": "npx parcel build ./src/views/*",
+    "prebuild": "npm run clean ",
+    "build": "npm run copyCNAME && npx parcel build ./src/views/*",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d ./dist",
     "formatAll": "prettier --write ."
