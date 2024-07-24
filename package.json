@@ -8,7 +8,7 @@
     "start:dev": "npx parcel serve ./src/views/*",
     "copyCNAME": "cp ./src/CNAME ./dist/",
     "prebuild": "npm run clean ",
-    "build": "npm run copyCNAME && pug ./src/views/ --out dist/views/ && cp --recursive ./src/stylesheets/ ./dist",
+    "build": "npm run copyCNAME && pug ./src/*.pug --out dist/ && cp ./src/*.css ./dist && cp --recursive ./src/assets ./dist",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d ./dist",
     "formatAll": "prettier --write ."
