@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rm -rf ./dist/*",
     "start": "npm run build && http-server ./dist -c-1",
-    "start:dev": "nodemon --exec npm start",
+    "start:dev": "nodemon --watch src --ext pug,css --exec npm start",
     "copyCNAME": "cp ./src/CNAME ./dist/",
     "prebuild": "npm run clean ",
     "build": "npm run copyCNAME && pug ./src/*.pug --out dist/ && cp ./src/*.css ./dist && cp --recursive ./src/assets ./dist",
