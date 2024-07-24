@@ -7,7 +7,7 @@ body {
   font-size: 3rem;
 
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   align-items: center;
   justify-items: center;
@@ -67,19 +67,23 @@ a:hover::before {
 }
 
 .a--about-me {
-  translate: var(--top-translate);
+  grid-column-start: 1;
+  /* translate: var(--top-translate); */
 }
 
 .a--portfolio {
-  translate: var(--bottom-translate);
+  grid-column-start: 1;
+  /* translate: var(--bottom-translate); */
 }
 
 .a--contact {
-  translate: var(--opposite-top-translate);
+  grid-column-start: 2;
+  /* translate: var(--opposite-top-translate); */
 }
 
 .a--resume {
-  translate: var(--opposite-bottom-translate);
+  grid-column-start: 2;
+  /* translate: var(--opposite-bottom-translate); */
 }
 
 .fade-in {
