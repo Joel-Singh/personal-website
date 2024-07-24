@@ -8,40 +8,20 @@
     "start:dev": "npx parcel serve ./src/views/*",
     "copyCNAME": "cp ./src/CNAME ./dist/",
     "prebuild": "npm run clean ",
-    "build": "npm run copyCNAME && npx parcel build ./src/views/*",
+    "build": "npm run copyCNAME && pug ./src/views/ --out dist/views/ && cp --recursive ./src/stylesheets/ ./dist",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d ./dist",
     "formatAll": "prettier --write ."
   },
   "dependencies": {
-    "@types/cookie-parser": "^1.4.3",
-    "@types/debug": "^4.1.8",
-    "@types/jest": "^29.5.4",
-    "@types/morgan": "^1.9.5",
     "@types/node": "^20.5.6",
     "@types/pug": "^2.0.6",
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
     "http-server": "^14.1.1",
-    "morgan": "~1.9.1",
     "pug": "^3.0.2",
-    "pug-cli": "^1.0.0-alpha6",
-    "supertest": "^6.2.1",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "pug-cli": "^1.0.0-alpha6"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.20",
-    "@babel/preset-env": "^7.22.20",
-    "@babel/preset-typescript": "^7.22.15",
-    "@parcel/transformer-pug": "^2.10.3",
-    "@prettier/plugin-pug": "github:prettier/plugin-pug",
-    "@types/express": "^4.17.17",
-    "@types/supertest": "^2.0.11",
-    "babel-jest": "^29.7.0",
     "gh-pages": "^6.0.0",
-    "nodemon": "^3.0.1",
-    "prettier": "^3.0.2"
+    "nodemon": "^3.0.1"
   }
 }
