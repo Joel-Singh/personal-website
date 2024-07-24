@@ -68,22 +68,22 @@ a:hover::before {
 
 .a--about-me {
   grid-column-start: 1;
-  /* translate: var(--top-translate); */
+  translate: var(--top-translate);
 }
 
 .a--portfolio {
   grid-column-start: 1;
-  /* translate: var(--bottom-translate); */
+  translate: var(--bottom-translate);
 }
 
 .a--contact {
   grid-column-start: 2;
-  /* translate: var(--opposite-top-translate); */
+  translate: var(--opposite-top-translate);
 }
 
 .a--resume {
   grid-column-start: 2;
-  /* translate: var(--opposite-bottom-translate); */
+  translate: var(--opposite-bottom-translate);
 }
 
 .fade-in {
