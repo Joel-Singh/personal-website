@@ -4,8 +4,8 @@
   --white: #fdfcfe;
   --black: #1f1f24;
   --blue: #4d7e9f;
-
-  background-color: var(--black);
+  --light-red: #f02b2b;
+  --light-purple: #9672ed;
   color: var(--white);
 
   font-family: "Noto sans", sans-serif;
@@ -35,7 +35,7 @@ h1 {
 }
 
 a {
-  color: var(--blue);
+  color: var(--light-purple);
 }
 
 h1,
