@@ -7,7 +7,7 @@
     "start": "npm run build && http-server ./dist -c-1",
     "start:dev": "nodemon --watch src --ext pug,css --exec npm start",
     "copyCNAME": "cp ./src/CNAME ./dist/",
-    "prebuild": "npm run clean ",
+    "prebuild": "npm run clean && mkdir  --parents dist",
     "build": "npm run copyCNAME && pug ./src/*.pug --out dist/ && cp ./src/*.css ./dist && cp --recursive ./src/assets ./dist",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d ./dist",
