@@ -7,71 +7,71 @@ block title
   title Portfolio
 
 mixin project( projectInformation, imgInformation, demoHref, githubHref)
-  div.portfolio__project
-    div.portfolio__project__text
-      h2= projectInformation.title
-      p #{projectInformation.description}
-      - const linkStyling = "display: block;"
-      a(href=demoHref style=linkStyling) Live demo
-      a(href=githubHref style=linkStyling) Source Code
-    img(alt=imgInformation.alt src=imgInformation.src width=imgInformation.width)
+  div.portfolio__project__text
+    h2= projectInformation.title
+    p #{projectInformation.description}
+    - const linkStyling = "display: block;"
+    a(href=demoHref style=linkStyling) Live demo
+    a(href=githubHref style=linkStyling) Source Code
+  img(alt=imgInformation.alt src=imgInformation.src width=imgInformation.width)
 
 block body
   h1 Portfolio
   p A list of my various web development projects. Most have been done as I was going through The Odin Project curriculum.
 
-  +project(
-    {
-      title: "Waldo",
-      description: "Waldo is a Create React App that is the classic Where's Waldo book in digital form"
-    },
-    {
-      alt: "",
-      src: "../assets/images/waldo.png",
-      width: "800px"
-    },
-    "https://joel-singh.github.io/waldo",
-    "https://github.com/Joel-Singh/waldo"
-  )
+  div.all_portfolio_projects
+    +project(
+      {
+        title: "Waldo",
+        description: "Waldo is a Create React App that is the classic Where's Waldo book in digital form"
+      },
+      {
+        alt: "",
+        src: "../assets/images/waldo.png",
+        width: "800px"
+      },
+      "https://joel-singh.github.io/waldo",
+      "https://github.com/Joel-Singh/waldo"
+    )
 
-  +project(
-    {
-      title: "Sweet Memory",
-      description: "Sweet Memory is a small candy-themed memory game created with create-react-app"
-    },
-    {
-      alt: "",
-      src: "../assets/images/sweet_memory.png",
-      width: "800px"
-    },
-    "https://joel-singh.github.io/sweet-memory/",
-    "https://github.com/Joel-Singh/sweet-memory"
-  )
+    +project(
+      {
+        title: "Sweet Memory",
+        description: "Sweet Memory is a small candy-themed memory game created with create-react-app"
+      },
+      {
+        alt: "",
+        src: "../assets/images/sweet_memory.png",
+        width: "800px"
+      },
+      "https://joel-singh.github.io/sweet-memory/",
+      "https://github.com/Joel-Singh/sweet-memory"
+    )
 
-  +project(
-    {
-      title: "WikiGiggles",
-      description: "Automatically finds, or trys, to find wikipedia funnies   "
-    },
-    {
-      alt: "",
-      src: "../assets/images/wikigigglescropped.png",
-      width: "800px"
-    },
-    "https://joel-singh.github.io/WikiGiggles/",
-    "https://github.com/Joel-Singh/WikiGiggles"
-  )
+    +project(
+      {
+        title: "WikiGiggles",
+        description: "Automatically finds, or trys, to find wikipedia funnies   "
+      },
+      {
+        alt: "",
+        src: "../assets/images/wikigigglescropped.png",
+        width: "800px"
+      },
+      "https://joel-singh.github.io/WikiGiggles/",
+      "https://github.com/Joel-Singh/WikiGiggles"
+    )
 
-  +project(
-    {
-      title: "Tic tac toe",
-      description: "Tic tac toe made with ts, pug, css, and parcel for transpilation"
-    },
-    {
-      alt: "",
-      src: "../assets/images/tic-tac-toe.png",
-      width: "800px"
-    },
-    "https://joel-singh.github.io/tic-tac-toe/",
-    "https://github.com/Joel-Singh/tic-tac-toe"
-  )
+    +project(
+      {
+        title: "Tic tac toe",
+        description: "Tic tac toe made with ts, pug, css, and parcel for transpilation"
+      },
+      {
+        alt: "",
+        src: "../assets/images/tic-tac-toe.png",
+        width: "800px"
+      },
+      "https://joel-singh.github.io/tic-tac-toe/",
+      "https://github.com/Joel-Singh/tic-tac-toe"
+    )
